@@ -1,10 +1,17 @@
 /* Add application styles & imports to this file! */
 
 html, body {
+    font-family: sans-serif;
     margin: 0;
     padding: 0;
 }
 
 main {
     margin: 1rem;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat( auto-fill, minmax(16rem, 1fr) );
+    gap: 1rem;
 }

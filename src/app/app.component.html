@@ -1,0 +1,32 @@
+<app-my-header></app-my-header>
+<main>
+    <h2>Scoping Styles: the &#64;scope rule</h2>
+    <p>
+        A <strong>scope</strong> is a subtree or fragment of a document, which can be used by selectors for more targeted matching. A scope is formed by determining:
+    </p>
+    <ul>
+        <li>The scoping root node, which acts as the upper bound of the scope, and optionally:</li>
+        <li>The scoping limit elements, which act as the lower bounds.</li>
+    </ul>
+    <a target="_blank" href="https://www.w3.org/TR/css-cascade-6/">
+        CSS Cascading and Inheritance Level 6 (W3C Working Draft)
+    </a>
+    <h2>Recipes</h2>
+    <div class="card-container">
+        <app-recipe-card
+            heading="Pizza Margherita"
+            description="The best pizza in town!"
+            [ingredients]="['Cutting edge CSS features!', 'Active dry yeast', 'Bread flour', 'Tomato sauce', 'Mozzarella cheese']"
+        ></app-recipe-card>
+        <app-recipe-card-old
+            heading="Pizza Margherita (Old)"
+            description="The (second) best pizza in town!"
+            [ingredients]="['DOM cluttering view encapsulation', 'Active dry yeast', 'Bread flour', 'Tomato sauce', 'Mozzarella cheese']"
+        ></app-recipe-card-old>
+        <app-recipe-card
+            heading="Cheeseburger"
+            description="A cheeseburger is a hamburger with a slice of melted cheese on top of the meat patty, added near the end of the cooking time."
+            [ingredients]="['Brioche hamburger buns', 'Romaine or shredded lettuce', 'Sliced tomato', 'Sliced red onion']"
+        ></app-recipe-card>
+    </div>
+</main>

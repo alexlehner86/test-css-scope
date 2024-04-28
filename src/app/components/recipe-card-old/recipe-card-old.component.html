@@ -1,0 +1,8 @@
+<h3>{{heading}}</h3>
+<p>{{description}}</p>
+<h4>Ingredients</h4>
+<ul>
+    @for (item of ingredients; track item) {
+        <li>{{item}}</li>
+    }
+</ul>
