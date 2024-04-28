@@ -1,0 +1,27 @@
+app-my-header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    background: darkblue;
+    color: white;
+    padding: 0.5rem 1rem;
+}
+
+@scope (app-my-header) {
+    h1 {
+        margin: 0;
+    }
+
+    ul {
+        display: flex;
+        gap: 1rem;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    a[href], a[href]:active, a[href]:visited {
+        color: yellow;
+    }
+}
