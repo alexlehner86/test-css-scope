@@ -1,6 +1,16 @@
+@scope (app-recipes-list) to (app-recipe-card, app-recipe-card-old) {
+    :scope {
+        display: block;
+    }
 
-.card-container {
-    display: grid;
-    grid-template-columns: repeat( auto-fill, minmax(16rem, 1fr) );
-    gap: 1rem;
+    p {
+        color: rgb(179 122 6);
+        font-style: italic;
+    }
+    
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+        gap: 1rem;
+    }
 }

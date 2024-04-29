@@ -1,3 +1,6 @@
+<p>
+    The list contains {{items.length}} recipes.
+</p>
 <div class="card-container">
     @for (item of items; track item) {
         @if (item.useOldComponent) {
@@ -7,3 +10,4 @@
         }
     }
 </div>
+<p>This is also a paragraph inside the list component.</p>
