@@ -1,4 +1,5 @@
 import { Component, Input, ViewEncapsulation } from '@angular/core';
+import { Recipe } from '../../models/recipe.interface';
 
 /**
  * Displays a recipe with a heading, description, and list of ingredients.
@@ -13,7 +14,5 @@ import { Component, Input, ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.None,
 })
 export class RecipeCardComponent {
-  @Input({ required: true }) heading!: string;
-  @Input({ required: true }) description!: string;
-  @Input() ingredients: string[] = [];
+  @Input({ required: true }) recipe!: Recipe;
 }

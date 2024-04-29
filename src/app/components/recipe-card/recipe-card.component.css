@@ -1,12 +1,12 @@
-app-recipe-card {
-    --highlight-color: rgb(194 34 2);
-    display: block;
-    background: lightgoldenrodyellow;
-    color: black;
-    padding: 1rem;
-}
-
 @scope (app-recipe-card) {
+    :scope {
+        --highlight-color: rgb(194 34 2);
+        display: block;
+        background: lightgoldenrodyellow;
+        color: black;
+        padding: 1rem;
+    }
+    
     h3, h4 {
         margin-block: 0 0.5em;
     }

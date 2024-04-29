@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Recipe } from '../../models/recipe.interface';
 
 /**
  * Identical functionality as RecipeCardComponent.
@@ -12,7 +13,5 @@ import { Component, Input } from '@angular/core';
   styleUrl: './recipe-card-old.component.css'
 })
 export class RecipeCardOldComponent {
-  @Input({ required: true }) heading!: string;
-  @Input({ required: true }) description!: string;
-  @Input() ingredients: string[] = [];
+  @Input({ required: true }) recipe!: Recipe;
 }

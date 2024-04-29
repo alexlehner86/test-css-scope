@@ -1,14 +1,14 @@
-app-my-header {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    background: darkblue;
-    color: white;
-    padding: 0.5rem 1rem;
-}
-
 @scope (app-my-header) {
+    :scope {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        background: darkblue;
+        color: white;
+        padding: 0.5rem 1rem;
+    }
+    
     h1 {
         margin: 0;
     }

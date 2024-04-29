@@ -1,0 +1,9 @@
+<div class="card-container">
+    @for (item of items; track item) {
+        @if (item.useOldComponent) {
+            <app-recipe-card-old [recipe]="item" />
+        } @else {
+            <app-recipe-card [recipe]="item" />
+        }
+    }
+</div>
